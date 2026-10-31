@@ -23,6 +23,10 @@ After 2021 the University of Ilorin also drew fewer of the country's qualified c
 
 Figure 2: Post-UTME screening at the University of Ilorin per 100 candidates nationally scoring 200 or more, 2020–2025, with the 2020 and 2022 strikes shaded.
 
+![Share of Google search interest in Nigeria among Unilorin, LASU, UNILAG, OAU and KWASU, 2019–2026](figures/fig3_search_share.png)
+
+Figure 3: Unilorin's share of Google search interest in Nigeria among five university names, 2019–2026 (2026 is January to October), with the 2022 strike shaded.
+
 First-choice figures for 2022 are not established: no source prints a comparable University of Ilorin value for that year. See [docs/phase1_notes.md](docs/phase1_notes.md) for the series, the acceptance rule and the conflicts found in published figures.
 
 ## Repository map
@@ -34,6 +38,7 @@ data/
   raw/                  figures copied as printed, one row per source and value
     applicants_sources.csv        first-choice applicants by institution and UTME year
     funnel_sources.csv            Post-UTME screening, admission and matriculation, University of Ilorin
+    google_trends_ng.csv          Google Trends monthly search interest, Nigeria, five university names
     national_scores_sources.csv   national UTME score bands
     national_totals_sources.csv   national UTME totals by year and measure
     strike_events.csv             strikes at the University of Ilorin and comparison universities
@@ -44,6 +49,7 @@ data/
     national_200plus.csv              national candidates scoring 200+
     screening_index.csv               screened per 100 national 200+ candidates
     unilorin_share_180plus.csv        share of national 180+ candidates, 2020–2021
+    trends_yearly.csv                 yearly search interest and share per term, 2019–2026
 docs/
   phase1_notes.md       Phase 1 notes: sources, rule, series, problems found
   phase2_notes.md       Phase 2 notes: funnel, national scores, strikes
@@ -52,13 +58,16 @@ docs/
 figures/
   fig1_change_2021_2026.png/.svg
   fig2_screening_share.png/.svg
+  fig3_search_share.png/.svg
 src/first_choice/
   series.py             first-choice series and peer panel
   funnel.py             funnel, national 200+ counts, screening index
-  figures.py            figures 1 and 2
+  trends.py             Google Trends download and yearly shares
+  figures.py            figures 1 to 3
 tests/
   test_series.py
   test_funnel.py
+  test_trends.py
 ```
 
 ## Reproduce
@@ -75,10 +84,13 @@ Then run, in order:
 
 ```
 python -m first_choice.series    # checks the first-choice tables against data/interim (--write regenerates them)
-python -m first_choice.funnel    # writes the funnel, national 200+ and screening index tables
+python -m first_choice.funnel    # checks the funnel, national 200+ and screening index tables (--write regenerates them)
+python -m first_choice.trends    # checks the yearly search shares (--write regenerates them)
 python -m first_choice.figures   # redraws figures/ from data/interim
 pytest
 ```
+
+`python -m first_choice.trends --download` fetches a new `data/raw/google_trends_ng.csv` from Google Trends. It needs the `trends` extra (`pip install -e ".[trends]"`) and an internet connection, and it does not overwrite an existing download.
 
 The acceptance rule is stated in the docstring of `src/first_choice/series.py`; the funnel rules in `src/first_choice/funnel.py`.
 

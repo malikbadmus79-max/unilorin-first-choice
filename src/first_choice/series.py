@@ -232,7 +232,7 @@ def to_csv_text(df: pd.DataFrame) -> str:
     return df.to_csv(index=False, lineterminator="\n")
 
 
-def compare(built: pd.DataFrame, path: Path) -> list[str]:
+def compare(built: pd.DataFrame, path: Path, key: list[str] | None = None) -> list[str]:
     """Differences between a built table and the file on disk, as text lines."""
     read = lambda f: pd.read_csv(f, dtype=str, keep_default_na=False)
     new = read(io.StringIO(to_csv_text(built)))
@@ -242,7 +242,7 @@ def compare(built: pd.DataFrame, path: Path) -> list[str]:
         diffs.append(f"column {c!r} dropped")
     for c in new.columns.difference(old.columns, sort=False):
         diffs.append(f"column {c!r} added")
-    key = [c for c in ("utme_year", "institution") if c in old.columns]
+    key = key or [c for c in ("utme_year", "institution") if c in old.columns]
     shared = [c for c in old.columns if c in new.columns and c not in key]
     merged = old.merge(new, on=key, how="outer", suffixes=("_existing", "_built"), indicator=True)
     for _, row in merged.iterrows():

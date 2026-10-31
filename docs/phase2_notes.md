@@ -77,3 +77,28 @@ Assessment: the rise in insecurity comes after most of the decline (2022–2024)
 Assessment: the University of Ilorin is not more expensive than the peers that gained applicants, so fees do not explain a fall specific to it. LASU's low charges for Lagos indigenes may help explain LASU's rise.
 
 Staying close to home could not be tested. JAMB's 2021 figures are by state of origin (Oyo 82,521; Osun 74,214; Ogun 70,971; Kwara 51,787), while the published 2026 figures (Lagos 321,814; FCT 302,963; Kaduna 303,498) appear to be by state of registration or centre, and the 2026 state rows sum to 2,637,873 against a stated total of 2,243,816. The two years are not comparable.
+
+## Result 7: search interest
+
+`data/raw/google_trends_ng.csv` holds monthly Google Trends search interest in Nigeria for "Unilorin", "LASU", "UNILAG", "OAU" and "KWASU", January 2019 to October 2026, requested together so the five terms share one scale. `data/interim/trends_yearly.csv` gives each term's yearly average as a share of the five-term total (figures/fig3_search_share.png).
+
+| Year | Unilorin | LASU | UNILAG | OAU | KWASU |
+|---|---|---|---|---|---|
+| 2019 | 25.3 | 14.5 | 33.3 | 22.1 | 4.8 |
+| 2020 | 18.4 | 18.9 | 34.8 | 22.1 | 5.8 |
+| 2021 | 23.5 | 16.3 | 33.3 | 18.9 | 8.0 |
+| 2022 | 19.0 | 24.2 | 24.9 | 15.2 | 16.6 |
+| 2023 | 23.7 | 23.0 | 25.2 | 14.7 | 13.5 |
+| 2024 | 19.4 | 24.0 | 23.2 | 14.5 | 18.9 |
+| 2025 | 15.8 | 23.9 | 24.0 | 14.8 | 21.5 |
+| 2026 | 14.5 | 23.4 | 25.4 | 14.1 | 22.6 |
+
+Reading: the University of Ilorin's share dips in the strike years 2020 (18.4) and 2022 (19.0) and recovers in the following year, then falls every year from 2023: 23.7, 19.4, 15.8, 14.5. KWASU's share rises from 4.8 (2019) to 22.6 (2026), with its largest jump in 2022, the year it stayed open during the national strike. LASU steps up in 2022 (16.3 to 24.2) and holds that level.
+
+Caveats:
+
+- Searches are not applications.
+- Searches for "Unilorin" include current students, not only prospective candidates.
+- "OAU" is ambiguous (it is also used for other organisations).
+- Google samples search data, so a new download can give slightly different values.
+- 2026 covers January to October only, and October is incomplete.

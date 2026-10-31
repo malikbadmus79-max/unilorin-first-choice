@@ -3,6 +3,8 @@
 - figures/fig1_change_2021_2026.png/.svg from data/interim/peer_panel.csv
 - figures/fig2_screening_share.png/.svg from data/interim/screening_index.csv
   and data/raw/strike_events.csv
+- figures/fig3_search_share.png/.svg from data/interim/trends_yearly.csv
+  and data/raw/strike_events.csv
 
 Uses Inter from assets/fonts/ (or an installed copy), otherwise the first
 available fallback font.
@@ -24,6 +26,7 @@ from matplotlib import font_manager  # noqa: E402
 
 from first_choice.funnel import SCREENING_INDEX  # noqa: E402
 from first_choice.series import PEER_PANEL, RAW_APPLICANTS, ROOT, UNILORIN, load_sources  # noqa: E402
+from first_choice.trends import RAW_TRENDS, TERMS, TRENDS_YEARLY  # noqa: E402
 
 FIGURES = ROOT / "figures"
 RAW_STRIKES = ROOT / "data" / "raw" / "strike_events.csv"
@@ -37,6 +40,9 @@ INK = "#1a1a1a"
 MUTED = "#555555"
 FAINT = "#888888"
 GRID = "#dedad2"
+
+# Figure 3: Unilorin highlighted, LASU in blue, the other terms in greys.
+TERM_COLOURS = {"Unilorin": ORANGE, "LASU": BLUE, "UNILAG": "#6f6f6f", "OAU": "#a3a3a3", "KWASU": "#4a4a4a"}
 
 FONT_PREFERENCE = ["Inter", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "DejaVu Sans"]
 DPI = 200
@@ -247,14 +253,101 @@ def fig2_screening_share(index: pd.DataFrame, strikes: pd.DataFrame) -> list[Pat
     return save(fig, "fig2_screening_share")
 
 
+def spread_labels(values: dict[str, float], gap: float) -> dict[str, float]:
+    """Label positions at least `gap` apart, kept as close to the values as possible."""
+    order = sorted(values, key=values.get)
+    pos = {k: values[k] for k in order}
+    for _ in range(50):
+        moved = False
+        for lo, hi in zip(order, order[1:]):
+            if pos[hi] - pos[lo] < gap:
+                shift = (gap - (pos[hi] - pos[lo])) / 2
+                pos[lo] -= shift
+                pos[hi] += shift
+                moved = True
+        if not moved:
+            break
+    return pos
+
+
+def raw_download_date(path: Path = RAW_TRENDS) -> str:
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("# Downloaded "):
+            return line.removeprefix("# Downloaded ").split()[0]
+    return "date not recorded"
+
+
+def fig3_search_share(yearly: pd.DataFrame, strikes: pd.DataFrame) -> list[Path]:
+    """Yearly share of Google search interest among the five terms."""
+    shares = yearly.pivot(index="year", columns="term", values="share_pct")[TERMS]
+    x = shares.index + 0.5  # yearly averages sit mid-year
+    last = shares.index.max()
+
+    fig = plt.figure(figsize=(9, 5.2))
+    ax = fig.add_axes([0.06, 0.12, 0.80, 0.60])
+    top = 40
+    for x0, x1, label in strike_bands(strikes):
+        if int(x0) != 2022:
+            continue
+        ax.axvspan(x0, x1, color=BAND, zorder=0, linewidth=0)
+        ax.text((x0 + x1) / 2, top * 1.04, label, ha="center", va="bottom", fontsize=10, color=MUTED, clip_on=False)
+    for term in reversed(TERMS):
+        unilorin = term == "Unilorin"
+        ax.plot(x, shares[term], color=TERM_COLOURS[term], linewidth=3 if unilorin else 2,
+                zorder=4 if unilorin else 2, marker="o", markersize=5 if unilorin else 3.5)
+    ends = spread_labels({t: shares.loc[last, t] for t in TERMS}, gap=2.1)
+    for term in TERMS:
+        ax.annotate(
+            f"{term} {shares.loc[last, term]:.0f}%", (last + 0.5, ends[term]), xytext=(8, 0),
+            textcoords="offset points", va="center", fontsize=10.5, color=TERM_COLOURS[term],
+            fontweight="bold" if term == "Unilorin" else "normal", annotation_clip=False,
+        )
+    first = shares.index.min()
+    ax.annotate(f"{shares.loc[first, 'Unilorin']:.0f}%", (first + 0.5, shares.loc[first, "Unilorin"]),
+                xytext=(0, 9), textcoords="offset points", ha="center", fontsize=10.5,
+                fontweight="bold", color=ORANGE)
+    ax.set_xticks(x, shares.index.astype(str), fontsize=11)
+    ax.set_xlim(first + 0.2, last + 0.8)
+    ax.set_ylim(0, top)
+    ax.set_yticks([0, 10, 20, 30, 40], ["0", "10", "20", "30", "40%"])
+    ax.yaxis.grid(True, color=GRID, linewidth=1)
+    ax.set_axisbelow(True)
+    ax.tick_params(length=0, labelsize=11)
+    for side in ("top", "right", "left"):
+        ax.spines[side].set_visible(False)
+
+    rows = yearly[yearly["year"] == last].iloc[0]
+    coverage = f"{last} covers {rows['months']} months" + (
+        f" ({rows['partial_months']} partial)" if rows["partial_months"] else ""
+    )
+    header(
+        fig,
+        f"Unilorin's share of searches fell from {shares.loc[first, 'Unilorin']:.1f}% to "
+        f"{shares.loc[last, 'Unilorin']:.1f}%, {first}–{last}",
+        "Share of Google search interest in Nigeria among five university names, yearly average of monthly values",
+    )
+    footer(
+        fig,
+        f"Search terms, not topics, compared in one request. {coverage}.",
+        f"Source: Google Trends via pytrends, downloaded {raw_download_date()} (data/raw/google_trends_ng.csv).",
+    )
+    return save(fig, "fig3_search_share")
+
+
 def main() -> int:
     style()
     panel = pd.read_csv(PEER_PANEL, keep_default_na=False)
     index = pd.read_csv(SCREENING_INDEX)
     strikes = pd.read_csv(RAW_STRIKES, dtype=str, keep_default_na=False)
     sources = load_sources(RAW_APPLICANTS)
+    yearly = pd.read_csv(TRENDS_YEARLY)
     print(f"font: {plt.rcParams['font.family'][0]}")
-    for path in fig1_change_2021_2026(panel, sources) + fig2_screening_share(index, strikes):
+    paths = (
+        fig1_change_2021_2026(panel, sources)
+        + fig2_screening_share(index, strikes)
+        + fig3_search_share(yearly, strikes)
+    )
+    for path in paths:
         print(f"{path.relative_to(ROOT).as_posix()}: written")
     return 0
 
