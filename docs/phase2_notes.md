@@ -55,3 +55,13 @@ Assessment:
 - Not tested: Kwara State University (KWASU), the state university in Malete, which stayed open during the 2022 strike, and the new Kwara State University of Education. Their first-choice application figures are not published (neither is in JAMB's top 10). This is the main gap in this explanation.
 
 Verdict: new private universities are unlikely to be a main cause. A shift to KWASU cannot be assessed without its application figures.
+
+## Result 5: insecurity in Kwara
+
+`data/raw/kwara_insecurity_sources.csv` records published counts for Kwara.
+
+- Kwara was among the quieter states until 2024. ACLED-based figures reported by ICIR give 84 attacks and 45 deaths in 2021, and about 60 incidents and 19 deaths in 2024. Nigeria Watch's 2022 and 2023 reports name Kwara among the states with the fewest farmer–herder deaths and give it no prominence in other categories.
+- Violence rose sharply in 2025: 207 deaths and 177 abductions between 1 January and 7 November 2025 (ACLED via ICIR). 79% of deaths were in four rural LGAs (Ifelodun, Pategi, Kaiama, Baruten); Asa LGA recorded none.
+- Abductions on the Ilorin–Ogbomoso highway, the main road from the South-West, were reported in December 2025 and January 2026, shortly before 2026 UTME registration.
+
+Assessment: the rise in insecurity comes after most of the decline (2022–2024) and cannot explain it. It may contribute to the 2025–2026 fall (56,758 to 52,514), but the data cannot separate it from the continuing trend. Consistent state-by-state counts for comparison universities' states were not available in the text of Nigeria Watch reports (values appear only in charts); ACLED data would allow a proper comparison.
