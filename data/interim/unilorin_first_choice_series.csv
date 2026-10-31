@@ -1,0 +1,10 @@
+utme_year,first_choice_applicants,share_of_applicants_pct,sources,n_agreeing_sources,status,notes
+2018,86401,,S01,1,single source,Not verified; one outlet
+2019,105058,,S02,1,single source,Not verified; Unilorin statement only
+2020,103582,5.31,S03;S06;S07,3,accepted,
+2021,78466,,S04;S06;S07,3,accepted,"S05 gives 76,466 in an ambiguous sentence"
+2022,,,S09;S17,0,not established,"S09's 97,351 is a different JAMB award measure; S17's 78,466 repeats the 2021 value; S09 gives 97,351 (excluded: different measure); S17 gives 78,466 (excluded: year-shifted)"
+2023,73749,,S06;S07;S08,3,accepted,
+2024,64143,,S10;S11,2,accepted,"S11 list prints 63,143 but its body says 64,143; S11 also gives 63,143"
+2025,56758,2.79,S12;S13;S14,3,accepted,"S17 gives 56,734 (excluded: year-shifted)"
+2026,52514,2.34,S15;S16,2,accepted,"S17 gives 56,758, the 2025 value; S17 gives 56,758 (excluded: year-shifted)"

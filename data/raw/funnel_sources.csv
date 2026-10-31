@@ -1,0 +1,13 @@
+source_id,utme_year,admission_session,stage,count,outlet,url,publication_date,notes
+P01,2017,2017/2018,Post-UTME screening applicants,64000,Premium Times,https://www.premiumtimesng.com/tag/university-of-ilorin-unilorin,2017-09-11,Headline figure only; cut-off 180
+S01,2018,2018/2019,"UTME candidates with 180 and above, first choice",47206,Nigerian Tribune,https://tribuneonlineng.com/unilorin-remains-nigerias-most-subscribed-varsity/,2018-07,
+S01,2018,2018/2019,Direct Entry candidates,9571,Nigerian Tribune,https://tribuneonlineng.com/unilorin-remains-nigerias-most-subscribed-varsity/,2018-07,"Admission pool printed as 56,777"
+S02,2019,2019/2020,Post-UTME screening candidates,45134,Daily Trust,https://dailytrust.com/over-45000-candidates-sit-for-unilorins-post-utme-screening,2019-08-05,"32,962 Ilorin centre + 12,172 Lagos centre; unclear if registered or attended"
+P02,2023,2023/2024,Post-UTME applicants,18098,Premium Times (Agency report),https://www.premiumtimesng.com/tag/university-of-ilorin-unilorin,2024-02-26,
+P02,2023,2023/2024,Post-UTME candidates who sat,16920,Premium Times (Agency report),https://www.premiumtimesng.com/tag/university-of-ilorin-unilorin,2024-02-26,
+T01,2024,2024/2025,"Post-UTME candidates, UTME",15946,ThisDay,https://www.thisdaylive.com/2025/09/02/21971-admission-seekers-jostle-for-13000-spaces-at-unilorin,2025-09-02,Reported as last year's figure
+T01,2024,2024/2025,"Post-UTME candidates, Direct Entry",1175,ThisDay,https://www.thisdaylive.com/2025/09/02/21971-admission-seekers-jostle-for-13000-spaces-at-unilorin,2025-09-02,
+T01,2024,2024/2025,Admitted,12856,ThisDay,https://www.thisdaylive.com/2025/09/02/21971-admission-seekers-jostle-for-13000-spaces-at-unilorin,2025-09-02,"'About 12,856'"
+U01,2025,2025/2026,"Post-UTME candidates, UTME",20220,University of Ilorin,https://www.unilorin.edu.ng/2025-post-utme/,2025-09-01,Also ThisDay and Guardian
+U01,2025,2025/2026,"Post-UTME candidates, Direct Entry",1751,University of Ilorin,https://www.unilorin.edu.ng/2025-post-utme/,2025-09-01,
+T01,2025,2025/2026,Admission places,13000,ThisDay,https://www.thisdaylive.com/2025/09/02/21971-admission-seekers-jostle-for-13000-spaces-at-unilorin,2025-09-02,Headline only; not explained in body

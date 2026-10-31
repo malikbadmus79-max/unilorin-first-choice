@@ -1,0 +1,10 @@
+source_id,utme_year,unused,measure,count,outlet,url,publication_date,notes
+N01,2020,,registered (implied),1950000,Guardian (?p=1175814),https://guardian.ng/?p=1175814,not shown,'over 1.9 million candidates who registered'; JAMB share 5.31% implies about 1.95m applications
+N02,2021,,results released,1312390,Legit.ng,https://www.legit.ng/education/1656689-jamb-releases-analysis-total-utme-results-2013-2025-key-observations-spotted,2025-05-25,Registered total not found; JAMB spokesman said 1.3m-1.4m registered
+N03,2023,,registered (mid-registration),1600000,Nairametrics,https://nairametrics.com/2023/02/20/2023-utme-jamb-registers-1-6-million-candidates-arrests-15-for-fraud/,2023-02-20,'at least 1.6 million'; final total not found
+N04,2023,,results released,1522476,Legit.ng,https://www.legit.ng/education/1656689-jamb-releases-analysis-total-utme-results-2013-2025-key-observations-spotted,2025-05-25,
+N05,2024,,registered,1989668,iWitness,https://iwitness.ng/jamb-releases-2024-utme-results-over-1-94-million-candidates-registered/amp,not shown,"Body parts sum to 1,987,898"
+N06,2024,,results released,1842364,Legit.ng,https://www.legit.ng/education/1656689-jamb-releases-analysis-total-utme-results-2013-2025-key-observations-spotted,2025-05-25,
+N07,2025,,registered,2030627,Gazette NGR,https://gazettengr.com/2-03-million-candidates-registered-for-2025-utme-jamb/,2025-03-10,"Excludes foreign centres; JAMB share 2.79% for Unilorin implies 2.034m, consistent"
+N08,2025,,sat / results released,1931467,Legit.ng; Guardian,https://www.legit.ng/education/1656689-jamb-releases-analysis-total-utme-results-2013-2025-key-observations-spotted,2025-05-25,
+N09,2026,,registered,2243816,Nairametrics,https://nairametrics.com/2026/03/02/2026-utme-jamb-registers-over-2-24-million-candidates-see-top-10-states/,2026-03-02,"Before deadline; JAMB share 2.34% for Unilorin implies 2.244m, consistent"
