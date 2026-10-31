@@ -32,3 +32,14 @@ The ratio is stable in 2020–2021 and falls by about two-thirds between 2021 an
 - The ratio compares screened candidates (who scored 180+) with national candidates scoring 200+, so it is an index, not a share.
 - National 200+ counts for 2023 and 2024 are derived from rounded percentages; 2025 has two published values.
 - Screening counts mix "registered", "sat" and "attended" across years (see funnel_sources.csv).
+
+## Result 3: the strike comparison (control group)
+
+`data/raw/strike_events.csv` records strike participation for the University of Ilorin, Lagos State University (LASU) and Kwara State University (KWASU).
+
+- LASU and KWASU did not join the February–October 2022 national strike; the University of Ilorin did. In July 2022 the Lagos governor's education adviser said LASU and the two new Lagos universities were "oversubscribed in the 2022 UTME application" because they were not on strike (a claim by an interested official, not independent data).
+- LASU's first-choice applications rose from below 38,309 in 2021 (outside the top 10) to 55,964 in 2023, 62,601 in 2024, 70,080 in 2025 and 84,426 in 2026, moving from outside the top 10 to first.
+- The federal peers (UNILAG, OAU, UNIBEN, UNN, UNIZIK, FUOYE) also struck in 2022, yet all gained first-choice applications between 2021 and 2026. A strike alone did not reduce demand for them.
+- LASU itself struck in December 2024, July 2025 and September 2026, and its applications continued to rise.
+
+Reading: the evidence is consistent with a narrower mechanism than "strikes reduce demand". The University of Ilorin's distinctive advantage was a calendar without strikes; the 2022 strike removed that advantage, while universities that had no such reputation were not penalised. The data cannot separate this from the other explanations still to be tested (new universities including KWASU's expansion, insecurity in Kwara, costs).

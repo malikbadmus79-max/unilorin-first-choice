@@ -1,0 +1,9 @@
+event_id,institution,start,end,scope,joined,outlet,url,publication_date,notes
+E01,University of Ilorin,2020-03,2020-12,ASUU national strike,yes,Vanguard,https://www.vanguardngr.com/2020/03/asuu-strike-stalls-unilorin-examinations-first-time-in-20-years/,2020-03,First time in 20 years; national strike ran to December 2020
+E02,University of Ilorin,2022-02-14,2022-10,ASUU national strike,yes,Vanguard,https://www.vanguardngr.com/2022/10/strike-unilorin-asuu-chairman-seeks-parents-intervention/,2022-10,Members 'had not been teaching since the strike commenced'
+E03,University of Ilorin,2025-10-13,,ASUU two-week warning strike,yes,allAfrica (Vanguard),https://allafrica.com/stories/202510140078.html,2025-10-14,Kwara State University also joined
+E04,Lagos State University,2022-02-14,2022-10,ASUU national strike,no,OpinionNigeria,https://www.opinionnigeria.com/just-in-11-state-varsities-shun-asuu-fg-threatens-unions/,2022-09-06,Branch officials not recognised by national ASUU
+E05,Kwara State University,2022-02-14,2022-10,ASUU national strike,no,OpinionNigeria,https://www.opinionnigeria.com/just-in-11-state-varsities-shun-asuu-fg-threatens-unions/,2022-09-06,One of 11 state universities not participating
+E06,Lagos State University,2022,,Claim of oversubscription in 2022 UTME due to no strike,,ThisDay,https://www.thisdaylive.com/2022/07/06/sanwo-olus-aide-seeks-end-to-asuu-strike-says-new-varsities-over-subscribed/,2022-07-06,Claim by Lagos governor's education adviser; not independent data
+E07,Lagos State University,2025-07-31,,Joint unions indefinite strike (state salary dispute),yes,ICIR,https://www.icirnigeria.org/asuu-others-ground-activities-in-lasu-begin-indefinite-strike/,2025-08-01,Second strike in eight months (after December 2024)
+E08,Lagos State University,2026-09-15,,ASUU-LASU indefinite strike,yes,allAfrica (Daily Trust),https://allafrica.com/stories/202609160047.html,2026-09-16,Status after September 2026 unknown
