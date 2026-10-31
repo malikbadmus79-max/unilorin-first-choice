@@ -43,3 +43,15 @@ The ratio is stable in 2020–2021 and falls by about two-thirds between 2021 an
 - LASU itself struck in December 2024, July 2025 and September 2026, and its applications continued to rise.
 
 Reading: the evidence is consistent with a narrower mechanism than "strikes reduce demand". The University of Ilorin's distinctive advantage was a calendar without strikes; the 2022 strike removed that advantage, while universities that had no such reputation were not penalised. The data cannot separate this from the other explanations still to be tested (new universities including KWASU's expansion, insecurity in Kwara, costs).
+
+## Result 4: new universities in Kwara
+
+`data/raw/kwara_universities.csv` lists 15 universities in Kwara State with ownership and licence year. Eight were licensed between 2021 and 2025: Thomas Adewumi University, Ahman Pategi University and University of Offa (2021); Muhammad Kamalud-deen University (2023); Kwara State University of Education (2024); Lens University, AbdulRasaq Abubakar Toyin University and Jimoh Babalola University (2025). Seven are private; one is state-owned.
+
+Assessment:
+
+- Scale: private universities have historically drawn a small share of UTME candidates (18,667 of over 1.6 million in 2014; under 20,000 of over 1.4 million in 2015). The University of Ilorin's first-choice applications fell by about 26,000 between 2021 and 2026. New private universities in Kwara, most of them small and fee-charging, are unlikely to account for a fall of that size on their own.
+- Timing: the three 2025 universities took their first students in 2025/2026, after most of the decline (2022–2024) had already happened.
+- Not tested: Kwara State University (KWASU), the state university in Malete, which stayed open during the 2022 strike, and the new Kwara State University of Education. Their first-choice application figures are not published (neither is in JAMB's top 10). This is the main gap in this explanation.
+
+Verdict: new private universities are unlikely to be a main cause. A shift to KWASU cannot be assessed without its application figures.
