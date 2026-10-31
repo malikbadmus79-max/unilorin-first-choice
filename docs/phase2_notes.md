@@ -65,3 +65,15 @@ Verdict: new private universities are unlikely to be a main cause. A shift to KW
 - Abductions on the Ilorin–Ogbomoso highway, the main road from the South-West, were reported in December 2025 and January 2026, shortly before 2026 UTME registration.
 
 Assessment: the rise in insecurity comes after most of the decline (2022–2024) and cannot explain it. It may contribute to the 2025–2026 fall (56,758 to 52,514), but the data cannot separate it from the continuing trend. Consistent state-by-state counts for comparison universities' states were not available in the text of Nigeria Watch reports (values appear only in charts); ACLED data would allow a proper comparison.
+
+## Result 6: fees and staying close to home
+
+`data/raw/fees_sources.csv` records published charges.
+
+- The University of Ilorin raised charges for 2023/2024 (announced 24 November 2023) and cut them four days later after protests: new students pay ₦114,720–₦215,820 depending on faculty, returning students ₦52,700–₦91,430. All federal universities raised charges in 2023.
+- As of June 2025 (one outlet, WithinNigeria), the University of Ilorin's charges (₦98,350–₦120,000) were below those of UNILAG (₦170,000–₦190,250), OAU (₦151,000–₦163,200), UNIBEN (₦180,000–₦195,000), FUOYE (about ₦165,000) and KWASU (up to ₦200,000). The university's 2025 range in that article conflicts with its revised 2023 range and needs checking.
+- LASU charges Lagos indigenes ₦25,000–₦58,000 and others ₦100,000–₦150,000, the lowest for Lagos-origin candidates among the universities compared.
+
+Assessment: the University of Ilorin is not more expensive than the peers that gained applicants, so fees do not explain a fall specific to it. LASU's low charges for Lagos indigenes may help explain LASU's rise.
+
+Staying close to home could not be tested. JAMB's 2021 figures are by state of origin (Oyo 82,521; Osun 74,214; Ogun 70,971; Kwara 51,787), while the published 2026 figures (Lagos 321,814; FCT 302,963; Kaduna 303,498) appear to be by state of registration or centre, and the 2026 state rows sum to 2,637,873 against a stated total of 2,243,816. The two years are not comparable.
