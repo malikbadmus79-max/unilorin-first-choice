@@ -1,0 +1,20 @@
+source_id,utme_year,band,count,percent,total_base,outlet,url,publication_date,notes
+NS1,2020,180 and above,781327,,,MySchoolGist (JAMB cumulative statistics),https://myschoolgist.com/ng/jamb-utme-performance-statistics,not shown,JAMB document after the June 2020 policy meeting
+NS1,2020,200 and above,404542,,,MySchoolGist (JAMB cumulative statistics),https://myschoolgist.com/ng/jamb-utme-performance-statistics,not shown,"Ilufoye blog gives 404,740"
+NS1,2020,160 and above,1329289,,,MySchoolGist (JAMB cumulative statistics),https://myschoolgist.com/ng/jamb-utme-performance-statistics,not shown,
+NS2,2021,200 and above,168613,,,Ilufoye blog (repost of SaharaReporters/Vanguard),https://ilufoyenoahsblog.blogspot.com/2021/09/breaking-mass-failure-hits-nigerias.html,2021-09-02,Consistent with BusinessDay 87.2% below 200 of about 1.31m
+NS2,2021,190-199,64323,,,Ilufoye blog (repost of SaharaReporters/Vanguard),https://ilufoyenoahsblog.blogspot.com/2021/09/breaking-mass-failure-hits-nigerias.html,2021-09-02,
+NS2,2021,180-189,90688,,,Ilufoye blog (repost of SaharaReporters/Vanguard),https://ilufoyenoahsblog.blogspot.com/2021/09/breaking-mass-failure-hits-nigerias.html,2021-09-02,Bands below 180 do not reconcile with JAMB's 65.62% at 160+
+NS3,2021,took UTME,1300722,,,Talkie blog (JAMB statistics),https://talkie-talkiegisthub.blogspot.com/2021/07/jamb-releases-statistics-for-utme-2020.html,2021-07-04,"1,340,003 registered"
+NS4,2019,below 200,,77.0,,BusinessDay,https://businessday.ng/news/article/2016-till-date-percentage-of-candidates-who-scored-less-than-200-in-jamb-utme/,2025-05-07,1.40 million below 200
+NS4,2020,below 200,,79.2,,BusinessDay,https://businessday.ng/news/article/2016-till-date-percentage-of-candidates-who-scored-less-than-200-in-jamb-utme/,2025-05-07,1.54 million below 200
+NS4,2021,below 200,,87.2,,BusinessDay,https://businessday.ng/news/article/2016-till-date-percentage-of-candidates-who-scored-less-than-200-in-jamb-utme/,2025-05-07,1.14 million below 200
+NS4,2022,below 200,,77.8,,BusinessDay,https://businessday.ng/news/article/2016-till-date-percentage-of-candidates-who-scored-less-than-200-in-jamb-utme/,2025-05-07,1.33 million below 200
+NS4,2023,below 200,,76.7,,BusinessDay,https://businessday.ng/news/article/2016-till-date-percentage-of-candidates-who-scored-less-than-200-in-jamb-utme/,2025-05-07,1.17 million below 200
+NS4,2024,below 200,,76.1,,BusinessDay,https://businessday.ng/news/article/2016-till-date-percentage-of-candidates-who-scored-less-than-200-in-jamb-utme/,2025-05-07,1.40 million below 200
+NS4,2025,below 200,,78.5,,BusinessDay,https://businessday.ng/news/article/2016-till-date-percentage-of-candidates-who-scored-less-than-200-in-jamb-utme/,2025-05-07,Conflicts with Legit 70.7%
+NS5,2022,200 and above,378639,,,Pulse (headline),https://www.pulse.ng/news/local/over-17m-candidates-sat-for-2022-utme-only-378639-scored-above-200/prvtspj,not checked,Headline only; page not read
+NS6,2023,200 and above,,23.36,1522476,Legit.ng,https://www.legit.ng/education/1656689-jamb-releases-analysis-total-utme-results-2013-2025-key-observations-spotted,2025-05-25,"Count derived: about 355,650"
+NS6,2024,200 and above,,24.0,1842364,Legit.ng,https://www.legit.ng/education/1656689-jamb-releases-analysis-total-utme-results-2013-2025-key-observations-spotted,2025-05-25,"Count derived: about 442,170"
+NS6,2025,200 and above,565988,29.3,1931467,Legit.ng,https://www.legit.ng/education/1656689-jamb-releases-analysis-total-utme-results-2013-2025-key-observations-spotted,2025-05-25,"Includes resit results; Nairametrics gives 21.5% (420,415) at first release"
+NS7,2025,200 and above,420415,21.5,,Nairametrics,https://nairametrics.com/2025/05/05/2025-utme-only-21-5-of-candidates-scored-above-200-as-2157-face-malpractice-probe-jamb/,2025-05-05,"First release, before resit"
