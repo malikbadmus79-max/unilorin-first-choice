@@ -2,6 +2,13 @@
 
 For years the University of Ilorin was the institution named most often as first choice in Nigeria's Unified Tertiary Matriculation Examination (UTME). This project rebuilds the number of candidates who chose it first in each UTME year from 2020 to 2026, using figures published by the Joint Admissions and Matriculation Board (JAMB) as reported in the press. It records every figure with its source, accepts a value only when independent sources agree, compares the University of Ilorin with peer universities, and tests which explanations for the change public data can support or rule out.
 
+## Key findings
+
+- First-choice applications fell from 103,582 (2020) to 52,514 (2026) and the university's rank from first to seventh, while all six of its peers in JAMB's top 10 in both 2021 and 2026 gained applicants.
+- The 2021 fall followed a national fall in UTME scores; from 2022 the university drew far fewer of the country's qualified candidates (10.8 screened per 100 candidates nationally scoring 200+ in 2021, 3.6 in 2024).
+- The timing is most consistent with the loss of its reputation for a calendar without strikes after the 2022 strike: Lagos State University, which stayed open, gained applications, and Kwara State University gained search interest (its applications are not published). New private universities and insecurity do not explain the fall; fees are not supported as a cause, on limited evidence. The data shows patterns, not candidates' reasons.
+- Full results with sources: [docs/findings.md](docs/findings.md). Recommendations: [docs/policy_brief.md](docs/policy_brief.md).
+
 ## Research questions
 
 1. How much did first-choice UTME demand for the University of Ilorin change from 2020 to 2026, in number and as a share of all candidates?
@@ -9,7 +16,7 @@ For years the University of Ilorin was the institution named most often as first
 3. Where are candidates lost between first choice, the 180 cut-off, Post-UTME screening and admission?
 4. Which explanations can public data support or rule out: new universities nearby, insecurity in Kwara, cost, admission rules, changing search interest?
 
-## Headline result so far
+## Headline results
 
 First-choice applications to the University of Ilorin fell from 103,582 in 2020 to 52,514 in 2026, a fall of 49.3%. Its share of all applicants fell from 5.31% to 2.34%, and it dropped from first place (2018–2024) to seventh (2026).
 
@@ -37,8 +44,11 @@ assets/
 data/
   raw/                  figures copied as printed, one row per source and value
     applicants_sources.csv        first-choice applicants by institution and UTME year
+    fees_sources.csv              published tuition and charges, 2023 and 2025
     funnel_sources.csv            Post-UTME screening, admission and matriculation, University of Ilorin
     google_trends_ng.csv          Google Trends monthly search interest, Nigeria, five university names
+    kwara_insecurity_sources.csv  published counts of violence in Kwara State
+    kwara_universities.csv        universities in Kwara State with licence year
     national_scores_sources.csv   national UTME score bands
     national_totals_sources.csv   national UTME totals by year and measure
     strike_events.csv             strikes at the University of Ilorin and comparison universities
@@ -50,9 +60,15 @@ data/
     screening_index.csv               screened per 100 national 200+ candidates
     unilorin_share_180plus.csv        share of national 180+ candidates, 2020–2021
     trends_yearly.csv                 yearly search interest and share per term, 2019–2026
+  validation/           Phase 3 recheck
+    phase3_recheck.csv                38 sampled values with verdict and note
 docs/
+  findings.md           findings with the source of every figure
+  policy_brief.md       policy brief and recommendations
   phase1_notes.md       Phase 1 notes: sources, rule, series, problems found
-  phase2_notes.md       Phase 2 notes: funnel, national scores, strikes
+  phase2_notes.md       Phase 2 notes: funnel, national scores, strikes, explanations, search interest
+  phase2_conclusion.md  Phase 2 conclusion: verdict on each explanation
+  phase3_validation.md  Phase 3 independent recheck of 38 sampled values
   project_plan.md       research questions, data, methods, phases, limitations
   source_log.md         every source_id with outlet, URL and publication date
 figures/
@@ -96,7 +112,7 @@ The acceptance rule is stated in the docstring of `src/first_choice/series.py`; 
 
 ## Status
 
-Phase 1 complete (source collection, first-choice series, peer panel). Phase 2 in progress (funnel, national scores, strike comparison). See [docs/project_plan.md](docs/project_plan.md) and [docs/phase2_notes.md](docs/phase2_notes.md).
+v1.0: analysis complete. Phase 1 (first-choice series and peer panel), Phase 2 (funnel, national scores, strikes, new universities, insecurity, fees, search interest) and Phase 3 (independent recheck) are done. See [docs/findings.md](docs/findings.md) and [docs/project_plan.md](docs/project_plan.md).
 
 ## Licence
 

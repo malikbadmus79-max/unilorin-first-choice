@@ -16,16 +16,16 @@ The fall has two parts:
 | Explanation | Verdict | Evidence |
 |---|---|---|
 | Lower national UTME scores | Explains 2020–2021 only | Share of national 180+ pool stable (9.2% → 8.7%) |
-| 2022 strike removed the "no-strike" advantage | Most consistent with the evidence | Decline begins in the 2022 cycle; universities that stayed open in 2022 (LASU, KWASU) gained applications and search interest; federal peers that also struck were not penalised, consistent with the loss of a distinctive advantage rather than a general strike effect |
+| 2022 strike removed the "no-strike" advantage | Most consistent with the evidence | Decline begins in the 2022 cycle; universities that stayed open in 2022 gained (LASU in applications and search interest; KWASU in search interest, as its applications are not published); federal peers that also struck were not penalised, consistent with the loss of a distinctive advantage rather than a general strike effect |
 | Shift to Kwara State University (KWASU) | Supported by search data only | KWASU's search share rose from 4.8% (2019) to 22.6% (2026), largest jump in 2022; its application figures are not published |
-| New private universities in Kwara | Unlikely to be a main cause | Eight licensed 2021–2025, but private universities draw about 1–2% of candidates, and three opened only in 2025/2026 |
+| New private universities in Kwara | Unlikely to be a main cause | Eight licensed 2021–2025, but private universities drew under 1.5% of candidates in 2014–2015, and three opened only in 2025/2026 |
 | Insecurity in Kwara | Too late for 2022–2024; possible minor effect in 2026 | Violence low until 2024 (about 19 deaths), sharp rise in 2025 (207 deaths, 177 abductions to 7 November) |
-| Fees | Ruled out as a cause specific to the university | Its charges are below those of the peers that gained (UNILAG, OAU, UNIBEN, KWASU) |
+| Fees | Not supported, on limited evidence | One outlet puts its 2025 charges below those of the peers that gained; this conflicts with its revised 2023 charges |
 | Staying close to home | Cannot be tested | Published 2021 and 2026 state figures use different bases |
 
 ## Summary
 
-The evidence is most consistent with this account: the University of Ilorin's long-standing advantage was an academic calendar without strikes. When it joined the eight-month 2022 strike, that advantage disappeared. Candidates who had chosen it for its calendar moved to universities that stayed open, in particular Kwara State University in Malete and Lagos State University. Other federal universities that also struck were not penalised, because they had no such reputation to lose.
+The evidence is most consistent with this account: the University of Ilorin's long-standing advantage was an academic calendar without strikes. When it joined the eight-month 2022 strike, that advantage disappeared. Candidates who had chosen it for its calendar moved to universities that stayed open: Lagos State University's applications rose, and Kwara State University in Malete gained search interest (its applications are not published). Other federal universities that also struck were not penalised, because they had no such reputation to lose.
 
 ## What the evidence cannot show
 
