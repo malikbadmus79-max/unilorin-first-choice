@@ -1,0 +1,39 @@
+check_id,table,source,url,claim,verdict,note
+V01,applicants,S08,https://www.legit.ng/education/1541081-revealed-top-10-sought-tertiary-institutions-nigeria/,"UTME 2023: University of Lagos first-choice applicants = 60606, rank 2",MATCH,
+V02,applicants,S10,https://allafrica.com/stories/202407190023.html,"UTME 2024: University of Nigeria, Nsukka first-choice applicants = 48544, rank 7",MATCH,
+V03,applicants,S13,https://nairametrics.com/2025/07/09/2025-admissions-jamb-names-lasu-unilag-unilorin-as-top-choices-for-candidates-in-nigeria/,"UTME 2025: Lagos State University first-choice applicants = 70080, rank 1",MATCH,
+V04,applicants,S11,https://www.legit.ng/education/1603051-2024-jamb-list-top-10-sought-universities-nigeria-emerges/,"UTME 2024: University of Nigeria, Nsukka first-choice applicants = 48544, rank 7",MATCH,
+V05,applicants,S07,https://businessday.ng/education/article/unilorin-unilag-are-utme-candidates-most-preferred-universities-in-four-years/,"UTME 2023: Obafemi Awolowo University first-choice applicants = 41959, rank 7",MATCH,
+V06,applicants,S06,https://www.thisdaylive.com/2024/04/29/jamb-unilorin-remains-utme-candidates-most-preferred-university-in-four-years/,"UTME 2020: Ahmadu Bello University first-choice applicants = 82984, rank 2",MATCH,Rank 2 inferred from 'closely followed by'
+V07,applicants,S12,https://guardian.ng/?p=2631492,"UTME 2025: University of Ibadan first-choice applicants = 47571, rank 6",MATCH,
+V08,applicants,S06,https://www.thisdaylive.com/2024/04/29/jamb-unilorin-remains-utme-candidates-most-preferred-university-in-four-years/,"UTME 2021: University of Ilorin first-choice applicants = 78466, rank 1",MATCH,"Sentence calls 78,466 'total UTME applications'; first-choice wording in the preceding sentence"
+V09,applicants,S05,https://www.ilorin.info/fullnews.php?id=29467,"UTME 2021: Obafemi Awolowo University first-choice applicants = 42614, rank 9",MATCH,
+V10,applicants,S15,https://www.withinnigeria.com/2026/05/13/most-selected-universities-in-jamb-2026-full-list-of-top-10-first-choice-schools/,"UTME 2026: University of Benin first-choice applicants = 55425, rank 5",MATCH,
+V11,applicants,S07,https://businessday.ng/education/article/unilorin-unilag-are-utme-candidates-most-preferred-universities-in-four-years/,"UTME 2021: University of Lagos first-choice applicants = 59190, rank 2",MATCH,
+V12,applicants,S09,https://storage.googleapis.com/qurium/peoplesgazette.com/unilorin-retains-top-spot-in-jamb-institutional-rankings.html,"UTME 2022: University of Benin first-choice applicants = 55455, rank 5",MATCH,
+V13,applicants,S13,https://nairametrics.com/2025/07/09/2025-admissions-jamb-names-lasu-unilag-unilorin-as-top-choices-for-candidates-in-nigeria/,"UTME 2025: University of Ilorin first-choice applicants = 56758, rank 3",MATCH,
+V14,applicants,S15,https://www.withinnigeria.com/2026/05/13/most-selected-universities-in-jamb-2026-full-list-of-top-10-first-choice-schools/,"UTME 2026: Nnamdi Azikiwe University first-choice applicants = 54085, rank 6",MATCH,
+V15,applicants,S06,https://www.thisdaylive.com/2024/04/29/jamb-unilorin-remains-utme-candidates-most-preferred-university-in-four-years/,"UTME 2021: University of Lagos first-choice applicants = 59190, rank 2",MATCH,
+V16,applicants,S12,https://guardian.ng/?p=2631492,"UTME 2025: University of Ilorin first-choice applicants = 56758, rank 3",MATCH,
+V17,applicants,S11,https://www.legit.ng/education/1603051-2024-jamb-list-top-10-sought-universities-nigeria-emerges/,"UTME 2024: University of Ilorin first-choice applicants = 63143, rank 1",MATCH,"Matches the numbered list; the same page's text says 64,143"
+V18,applicants,S05,https://www.ilorin.info/fullnews.php?id=29467,"UTME 2021: Ahmadu Bello University first-choice applicants = 44509, rank 6",MATCH,
+V19,applicants,S05,https://www.ilorin.info/fullnews.php?id=29467,"UTME 2021: University of Benin first-choice applicants = 49763, rank 3",MATCH,
+V20,applicants,S16,https://businessday.ng/education/article/here-are-nigerias-10-most-preferred-universities-for-2026-jamb-admission/,"UTME 2026: University of Port Harcourt first-choice applicants = 48199, rank 10",MATCH,
+V21,funnel,G02,https://guardian.ng/?p=2357388,2023/2024: Post-UTME candidates who sat = 16920,MATCH,
+V22,funnel,G03,https://guardian.ng/?p=2428701,2024/2025: Post-UTME candidates who attended = 16097,MATCH,
+V23,funnel,S02,https://dailytrust.com/over-45000-candidates-sit-for-unilorins-post-utme-screening,2019/2020: Post-UTME screening candidates = 45134,MATCH,
+V24,funnel,P02,https://www.premiumtimesng.com/tag/university-of-ilorin-unilorin,2023/2024: Post-UTME applicants = 18098,MATCH,"Tag-archive excerpt, not a standalone article"
+V25,funnel,S01,https://tribuneonlineng.com/unilorin-remains-nigerias-most-subscribed-varsity/,"2018/2019: UTME candidates with 180 and above, first choice = 47206",MATCH,
+V26,funnel,UN2,https://unilorin.edu.ng/38835-2,2026/2027: Post-UTME registered = 15344,MATCH,
+V27,national,NS2,https://ilufoyenoahsblog.blogspot.com/2021/09/breaking-mass-failure-hits-nigerias.html,UTME 2021: 200 and above = 168613,MATCH,
+V28,national,NS7,https://nairametrics.com/2025/05/05/2025-utme-only-21-5-of-candidates-scored-above-200-as-2157-face-malpractice-probe-jamb/,UTME 2025: 200 and above = 420415 21.5%,MATCH,"Base is 1,955,069 candidates; conflicts with V30 for the same year"
+V29,national,NS4,https://businessday.ng/news/article/2016-till-date-percentage-of-candidates-who-scored-less-than-200-in-jamb-utme/,UTME 2024: below 200 =  76.1%,MATCH,
+V30,national,NS6,https://www.legit.ng/education/1656689-jamb-releases-analysis-total-utme-results-2013-2025-key-observations-spotted,UTME 2025: 200 and above = 565988 29.3%,MATCH,Includes resit results; conflicts with V28
+V31,fees,University of Ilorin,https://www.legit.ng/education/1567491-unilorin-bows-pressure-slashes-tuition-fees-student-dialogue/,"University of Ilorin, returning (revised), as of 2023-11-28: 52700–91430 naira",MATCH,
+V32,fees,Lagos State University,https://www.withinnigeria.com/news/2025/06/14/what-students-now-pay-a-breakdown-of-nigerian-federal-and-state-universities-tuition-hikes-as-of-2025/?amp=1,"Lagos State University, indigene, as of 2025-06: 25000–58000 naira",MATCH,
+V33,fees,University of Ilorin,https://www.withinnigeria.com/news/2025/06/14/what-students-now-pay-a-breakdown-of-nigerian-federal-and-state-universities-tuition-hikes-as-of-2025/?amp=1,"University of Ilorin, all, as of 2025-06: 98350–120000 naira",MATCH,
+V34,insecurity,K02,https://www.nigeriawatch.org/media/html/2022_Annual_Report.pdf,2022 Kwara: ranking = among the least farmer/herdsmen clash deaths,MATCH,
+V35,insecurity,K06,https://allafrica.com/stories/202601050533.html,2026 Kwara highway: abductions reported = January 2026,MATCH,Road is Isanlu-Isin-Omu Aran (Kwara South); recorded area corrected
+V36,insecurity,K03,https://nigeriawatch.org/media/html/Reports/NGA-Watch-Report23VF.pdf,2023 Kwara: ranking = among the lowest farmer/herdsmen clash tolls,MATCH,
+V37,strike,E05,https://www.opinionnigeria.com/just-in-11-state-varsities-shun-asuu-fg-threatens-unions/,Kwara State University ASUU national strike starting 2022-02-14: joined = no,MATCH,
+V38,strike,E06,https://www.thisdaylive.com/2022/07/06/sanwo-olus-aide-seeks-end-to-asuu-strike-says-new-varsities-over-subscribed/,Lagos State University Claim of oversubscription in 2022 UTME due to no strike starting 2022: joined = nan,MATCH,
