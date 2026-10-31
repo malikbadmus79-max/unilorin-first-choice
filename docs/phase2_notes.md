@@ -21,7 +21,7 @@ Candidates at the university's Post-UTME screening per 100 candidates nationally
 | 2021 | 18,153 | 168,613 | 10.8 |
 | 2022 | about 25,000 (projected) | 378,639 | 6.6 |
 | 2023 | 16,920 | about 355,650 | 4.8 |
-| 2024 | 16,097 | about 442,170 | 3.6 |
+| 2024 | 16,097 | 442,167 | 3.6 |
 | 2025 | 20,220 (UTME registrants) | 420,415–565,988 | 3.6–4.8 |
 
 The ratio is stable in 2020–2021 and falls by about two-thirds between 2021 and 2024. The fall begins in the cycle that includes the February–October 2022 strike, which delayed the 2022 and 2023 screenings to February 2023 and February 2024. The timing is consistent with the strike explanation but does not establish it; new universities, insecurity and costs remain to be tested over the same years.

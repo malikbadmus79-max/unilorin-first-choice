@@ -17,48 +17,77 @@ Seven universities were in JAMB's top 10 in both 2021 and 2026. Of these, only t
 
 ![Change in first-choice applications, 2021 to 2026, universities in JAMB's top 10 in both years](figures/fig1_change_2021_2026.png)
 
-Figures for 2022 are not established: no source prints a comparable University of Ilorin value for that year. See [docs/phase1_notes.md](docs/phase1_notes.md) for the series, the acceptance rule and the conflicts found in published figures.
+After 2021 the University of Ilorin also drew fewer of the country's qualified candidates to its own screening: candidates at its Post-UTME screening fell from 10.8 per 100 candidates nationally scoring 200 or more in 2021 to 3.6 in 2024.
+
+![Candidates at the University of Ilorin's Post-UTME screening per 100 candidates nationally scoring 200+, 2020–2025](figures/fig2_screening_share.png)
+
+Figure 2: Post-UTME screening at the University of Ilorin per 100 candidates nationally scoring 200 or more, 2020–2025, with the 2020 and 2022 strikes shaded.
+
+First-choice figures for 2022 are not established: no source prints a comparable University of Ilorin value for that year. See [docs/phase1_notes.md](docs/phase1_notes.md) for the series, the acceptance rule and the conflicts found in published figures.
 
 ## Repository map
 
 ```
+assets/
+  fonts/                Inter typeface used in the figures (SIL Open Font License)
 data/
   raw/                  figures copied as printed, one row per source and value
-    applicants_sources.csv       first-choice applicants by institution and UTME year
-    funnel_sources.csv           Post-UTME screening and admission, University of Ilorin
-    national_totals_sources.csv  national UTME totals by year and measure
-  interim/              values after applying the acceptance rule
+    applicants_sources.csv        first-choice applicants by institution and UTME year
+    funnel_sources.csv            Post-UTME screening, admission and matriculation, University of Ilorin
+    national_scores_sources.csv   national UTME score bands
+    national_totals_sources.csv   national UTME totals by year and measure
+    strike_events.csv             strikes at the University of Ilorin and comparison universities
+  interim/              values derived from data/raw by src/first_choice
     peer_panel.csv                    institution-year panel
     unilorin_first_choice_series.csv  University of Ilorin series, 2018–2026
+    funnel_by_year.csv                first choice to matriculation, 2018–2026
+    national_200plus.csv              national candidates scoring 200+
+    screening_index.csv               screened per 100 national 200+ candidates
+    unilorin_share_180plus.csv        share of national 180+ candidates, 2020–2021
 docs/
   phase1_notes.md       Phase 1 notes: sources, rule, series, problems found
+  phase2_notes.md       Phase 2 notes: funnel, national scores, strikes
   project_plan.md       research questions, data, methods, phases, limitations
   source_log.md         every source_id with outlet, URL and publication date
 figures/
-  fig1_change_2021_2026.png
+  fig1_change_2021_2026.png/.svg
+  fig2_screening_share.png/.svg
 src/first_choice/
-  series.py             rebuilds the interim tables from data/raw
+  series.py             first-choice series and peer panel
+  funnel.py             funnel, national 200+ counts, screening index
+  figures.py            figures 1 and 2
 tests/
   test_series.py
+  test_funnel.py
 ```
 
-## Reproducing the interim tables
+## Reproduce
+
+Set up the environment once:
 
 ```
 python -m venv .venv
 .venv/Scripts/activate        # Windows; on macOS/Linux: source .venv/bin/activate
 pip install -e ".[dev]"
-python -m first_choice.series          # compares the built tables with data/interim
-python -m first_choice.series --write  # regenerates data/interim
+```
+
+Then run, in order:
+
+```
+python -m first_choice.series    # checks the first-choice tables against data/interim (--write regenerates them)
+python -m first_choice.funnel    # writes the funnel, national 200+ and screening index tables
+python -m first_choice.figures   # redraws figures/ from data/interim
 pytest
 ```
 
-The acceptance rule is stated in the docstring of `src/first_choice/series.py`.
+The acceptance rule is stated in the docstring of `src/first_choice/series.py`; the funnel rules in `src/first_choice/funnel.py`.
 
 ## Status
 
-Phase 1 complete (source collection, first-choice series, peer panel). Phase 2 next (funnel and explanations). See [docs/project_plan.md](docs/project_plan.md).
+Phase 1 complete (source collection, first-choice series, peer panel). Phase 2 in progress (funnel, national scores, strike comparison). See [docs/project_plan.md](docs/project_plan.md) and [docs/phase2_notes.md](docs/phase2_notes.md).
 
 ## Licence
 
 Code is released under the MIT Licence (see [LICENSE](LICENSE)). Data and documentation in `data/`, `docs/` and `figures/` are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); the underlying figures remain the statements of JAMB and the outlets cited in [docs/source_log.md](docs/source_log.md).
+
+The Inter fonts in `assets/fonts/` are released under the SIL Open Font License 1.1 (see [assets/fonts/LICENSE.txt](assets/fonts/LICENSE.txt)).
